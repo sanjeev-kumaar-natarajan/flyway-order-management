@@ -9,9 +9,9 @@ import java.math.BigDecimal;
  * Customers Entity class that represents customers table in the database.
  */
 @Entity
-@Table(name = "customers", schema = "order_management_schema")
+@Table(name = "customer", schema = "order_management_schema")
 @Data
-public class Customers {
+public class Customer {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,7 +22,7 @@ public class Customers {
     BigDecimal phoneNumber;
     String address;
 
-    public Customers(String fullName, String email, BigDecimal phoneNumber, String address) {
+    public Customer(String fullName, String email, BigDecimal phoneNumber, String address) {
         this.fullName = fullName;
         this.email = email;
         this.phoneNumber = phoneNumber;

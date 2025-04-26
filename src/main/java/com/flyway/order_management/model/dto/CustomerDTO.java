@@ -8,7 +8,7 @@ import java.math.BigDecimal;
  * CustomersDTO class that represents the customer data transfer object.
  */
 @Data
-public class CustomersDTO {
+public class CustomerDTO {
 
     int customerId;
     String fullName;
@@ -16,7 +16,7 @@ public class CustomersDTO {
     BigDecimal phoneNumber;
     String address;
 
-    public CustomersDTO(int customerId, String fullName, String email, BigDecimal phoneNumber, String address) {
+    public CustomerDTO(int customerId, String fullName, String email, BigDecimal phoneNumber, String address) {
         this.customerId = customerId;
         this.fullName = fullName;
         this.email = email;
@@ -24,7 +24,7 @@ public class CustomersDTO {
         this.address = address;
     }
 
-    public CustomersDTO() {
+    public CustomerDTO() {
     }
 
 }

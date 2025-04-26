@@ -1,27 +1,27 @@
-package com.flyway.order_management.Mapper.Specification;
+package com.flyway.order_management.mapper.specification;
 
-import com.flyway.order_management.model.dto.CustomersDTO;
-import com.flyway.order_management.model.entity.Customers;
+import com.flyway.order_management.model.dto.CustomerDTO;
+import com.flyway.order_management.model.entity.Customer;
 
 /**
  * Mapper interface that provides to methods to map Customers entity object to CustomersDTO object and vice versa.
  */
-public interface CustomersMapper {
+public interface CustomerMapper {
 
     /**
      * Mapper method to map CustomersDTO object to Customers Entity.
      *
-     * @param customersDTO CustomersDTO object to be mapped.
+     * @param customerDTO CustomersDTO object to be mapped.
      * @return Customers Entity that has CustomersDTO objects mapped.
      */
-    Customers mapToCustomersEntity(CustomersDTO customersDTO);
+    Customer mapToCustomersEntity(CustomerDTO customerDTO);
 
     /**
      * Mapper method to map Customers Entity to CustomersDTO object.
      *
-     * @param customers Customers Entity to be mapped.
+     * @param customer Customers Entity to be mapped.
      * @return CustomersDTO object that has the Customers Entity mapped.
      */
-    CustomersDTO mapToCustomersDTO(Customers customers);
+    CustomerDTO mapToCustomersDTO(Customer customer);
 
 }
