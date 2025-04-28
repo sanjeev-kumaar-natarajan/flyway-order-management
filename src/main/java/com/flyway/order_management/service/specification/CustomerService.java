@@ -17,4 +17,35 @@ public interface CustomerService {
      */
     List<CustomerDTO> findAll();
 
+    /**
+     * Method to return a customer by its ID.
+     *
+     * @param id The ID of the customer to be fetched.
+     * @return The customer data stored as a CustomerDTO object.
+     */
+    CustomerDTO findById(int id);
+
+    /**
+     * Method to add a new customer to the database.
+     *
+     * @param customerDTO The customer data to be added stored as a CustomerDTO object.
+     * @return The added customer data stored as a CustomerDTO object.
+     */
+    CustomerDTO addCustomer(CustomerDTO customerDTO);
+
+    /**
+     * Method to update an existing customer in the database.
+     *
+     * @param customerDTO The customer data to be updated stored as a CustomerDTO object.
+     * @return The updated customer data stored as a CustomerDTO object.
+     */
+    CustomerDTO updateCustomer(CustomerDTO customerDTO);
+
+    /**
+     * Method to delete a customer from the database by its ID.
+     *
+     * @param id The ID of the customer to be deleted.
+     */
+    void deleteCustomer(int id);
+
 }
